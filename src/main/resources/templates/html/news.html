@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <table>
+    <thead class="table-dark">
+    <tr class="text-center">
+      <th>제목</th>
+      <th>작성일시</th>
+    </tr>
+    </thead>
+    <tbody class="text-center">
+    <tr th:each="notice:${notices}">
+      <td th:text="${notice.content}"></td>
+      <td th:text="${notice.sch_date}"></td>
+    </tr>
+    </tbody>
+  </table>
+</body>
+</html>
